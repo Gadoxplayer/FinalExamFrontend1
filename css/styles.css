@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+:root { /*pseudoselectores*/
+
+    --primary-color:#000d1a;
+    --secondary-color: rgb(233, 174, 66);
+    --bg-color:#ffffffc0;
+   }
+
+.aside {
+    display: flex;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    /* line-height: 35px; */
+    margin: auto;
+    justify-content: space-around;
+    
+}
+
+header{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+h1{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #000;
+    font-size: 25px;
+    
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav1{
+    display: flex;
+}
+
+header .nav1 ul {
+    list-style: none;
+    display: flex;    
+    flex-wrap: wrap;  
+    flex-direction: row;
+    margin: auto;
+
+}
+
+
+nav{
+    display: flex;
+    height: 100px;
+           
+}
+
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+nav ul li a:before{
+    content:'';
+    background: blue;
+    bottom:-10px;
+    height: 5px;
+    width: 0px;
+    transition-duration: 0.5s; 
+}
+  
+nav ul li a:hover::before{
+      width: 100%;
+  }
+
+span{
+    color: white;
+}
+
+
+.sect1{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    margin: 5%;
+    font-size: 50px;
+    color: rgb(97, 54, 24);
+}
+
+section .nav2 ul{
+    list-style: none;
+    display: flex;    
+    flex-wrap: wrap;  
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+section .nav2 ul li a{
+    color: rgb(63, 62, 62);
+    text-decoration: none;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.sect2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    border: solid rgb(231, 226, 226) 1px;
+    margin: 1%;
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: rgb(247, 236, 236);
+}
+
+.imagenArticulo {
+    background-image: url(../imagenes/churrasquito.png);
+    width: 90%;
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 4%;
+}
+
+p{
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.precio{
+    color: rgb(255, 145, 0);
+    font-weight: bolder;
+}
+
+.imagenArticulo2 {
+    background-image: url(../imagenes/comedero.png);
+    width: 90%;
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.imagenArticulo3 {
+    background-image: url(../imagenes/Imagenes\ Examen\ B.png);
+    width: 90%;
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 4%;
+}
+
+footer{
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    height: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width : 800px){
+    .sect2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-article{
+        width: 90%;
+        
+    }
+
+ header nav ul li {
+     display: none;
+     
+ }
+
+ header nav::before{
+     content: '\f0c9';
+     font-family: "Font Awesome 5 free";
+     font-weight: 900;
+     font-size: 2rem;
+     color: black;
+    flex-direction: row;
+    margin: auto;
+    margin-right: 50px;
+}
+}
+
